@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Raise the request on behalf of</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option disabled selected>none</option>
+                    <option>Adi</option>
+                    <option>Navi</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-lg float-right">Logged in user</button>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-3">
+            <button type="submit" class="btn btn-primary btn-lg">Juridiction Dropdown</button>
+        </div>
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-lg">File upload UI control</button>
+        </div>
+        <div class="col-5">
+            <button type="submit" class="btn btn-primary btn-lg mr-1">Submit</button>
+            <button type="submit" class="btn btn-primary btn-lg mr-1">Reset</button>
+            <button type="submit" class="btn btn-primary btn-lg mr-1">Set Priorty</button>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary ">Scheduled</button>
+            <button type="submit" class="btn btn-outline-primary ">History</button>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div>
+                <ngx-datatable [rows]="rows" [columns]="columns" class="material" [scrollbarH]="true" [headerHeight]="50"
+                [footerHeight]="50" [rowHeight]="50" rowHeight="auto"
+                [limit]="1"> </ngx-datatable>
+            </div>
+        </div>
+    </div>
+</div>
